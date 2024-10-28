@@ -1,6 +1,6 @@
 public class Kindle {
     private int pageNumber;
-    private int totalNumberOfPages;
+    private final int totalNumberOfPages;
 
     public Kindle(int numberOfPages) {
         totalNumberOfPages = numberOfPages;

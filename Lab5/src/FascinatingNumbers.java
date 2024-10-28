@@ -4,7 +4,7 @@ public class FascinatingNumbers {
     /**
     * Finding Fibonacci and Prime Numbers from an Inputted Sequence
     * @author Daniel Jonas
-     */
+    */
 
     //=============================================================================
 
@@ -20,7 +20,10 @@ public class FascinatingNumbers {
     public static void main(String[] args) {
 
         /**
-        * Displays Results of Calculations Performed in Other Methods
+         * Method description.
+         * @param One-for-each-parameter-name Parameter-description
+         * @return Return value description
+         * @see
          */
 
         // Declares and Initializes Variables and Arrays
