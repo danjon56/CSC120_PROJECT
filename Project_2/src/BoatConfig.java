@@ -38,8 +38,10 @@ public class BoatConfig implements Serializable {
      */
 
     public boolean nameCheck (String userResponse) {
+        int increment;
 
-        for (int increment = 0; increment < boatArray.size(); increment++) {
+
+        for (increment = 0; increment < boatArray.size(); increment++) {
 
             Boats boats = boatArray.get(increment);
 
@@ -136,7 +138,7 @@ public class BoatConfig implements Serializable {
      * Prints the list of boats from boatArray, as well as their properties. Totals the expenses and prices of all boats.
      */
 
-    public void display() {
+    public void displayBoats() {
 
         int increment;
 

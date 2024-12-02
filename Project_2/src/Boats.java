@@ -10,13 +10,13 @@ import java.io.Serializable;
 public class Boats implements Serializable {
 
     enum boatType {POWER, SAILING}
-    private String name;
+    private final String name;
     boatType powerOrSailing;
-    private int year;
-    private double purchasePrice;
-    private String model;
+    private final int year;
+    private final double purchasePrice;
+    private final String model;
     private double upkeepExpenses;
-    private byte lengthOfBoat;
+    private final byte lengthOfBoat;
 
     /**
      * Constructs a new Boat object with the specified attributes.
@@ -61,16 +61,6 @@ public class Boats implements Serializable {
         this.upkeepExpenses += upkeepExpenses;
 
         return String.format("Expense authorized, $%.2f spent.", this.upkeepExpenses);
-
-    }
-
-    /**
-    * Returns boatType.
-    */
-
-    private boatType getPowerOrSailing() {
-
-        return powerOrSailing;
 
     }
 
@@ -142,7 +132,7 @@ public class Boats implements Serializable {
     public String toString() {
 
         return String.format("%-10s %-15s %-4d %-12s %-4s : Paid $ %12.2f : Spent $ %10.2f",
-                getPowerOrSailing(), getName(), getYear(), getModel(),
+                powerOrSailing, getName(), getYear(), getModel(),
                 getLengthOfBoat() + "'", getPurchasePrice(), getUpkeepExpenses());
 
     }

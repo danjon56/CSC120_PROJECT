@@ -75,7 +75,7 @@ public class FleetManagementInitializing implements Serializable {
                 case 'p':
                 case 'P':
 
-                    boats.display();
+                    boats.displayBoats();
 
                     break;
 
